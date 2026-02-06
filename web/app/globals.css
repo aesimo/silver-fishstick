@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-midnight text-white antialiased;
+  min-height: 100vh;
+  font-family: var(--font-inter);
+  background-image: radial-gradient(circle at top, rgba(108, 92, 231, 0.2), transparent 45%),
+    radial-gradient(circle at 30% 30%, rgba(0, 245, 212, 0.15), transparent 55%),
+    linear-gradient(120deg, #05060a 0%, #0d1220 50%, #05060a 100%);
+}
+
+.glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-neon via-white to-aurora;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-space);
+}
